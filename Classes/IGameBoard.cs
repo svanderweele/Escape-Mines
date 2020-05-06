@@ -10,5 +10,6 @@ namespace TurtleApp.Classes
         Vector2 GetSize();
 
         string ToString();
+        bool IsPositionOnBoard(int x, int y);
     }
 }

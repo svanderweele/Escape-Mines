@@ -20,6 +20,11 @@ namespace TurtleApp.Classes
             return _tiles[x, y];
         }
 
+        public bool IsPositionOnBoard(int x, int y)
+        {
+            return (x >= 0 && x < _tiles.GetLength(0) && y >= 0 && y < _tiles.GetLength(1));
+        }
+
         public void SetSize(int x, int y)
         {
             _tiles = new TileType[x, y];
