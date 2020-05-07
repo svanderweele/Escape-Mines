@@ -16,6 +16,8 @@ namespace TurtleApp.Classes
         {
             _position = new Vector2(x, y);
             _rotation = initialRotation;
+
+            System.Console.WriteLine("Starting Position: {0}, Starting Rotation: {1}", _position , _rotation);
         }
 
         public void Move(int direction)

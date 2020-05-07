@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 
-namespace TurtleApp.Classes.Actions
+namespace TurtleApp.Classes
 {
     public class GameDataParser : IGameDataParser
     {
@@ -50,7 +50,7 @@ namespace TurtleApp.Classes.Actions
             gameData.TurtleRotation = startingRotation;
 
             gameData.ActionSequences = new List<string[]>();
-            for (int lineIndex = 3; lineIndex < lines.Length; lineIndex++)
+            for (int lineIndex = 4; lineIndex < lines.Length; lineIndex++)
             {
                 string[] actionsString = lines[lineIndex].Split(" ");
                 gameData.ActionSequences.Add(actionsString);
